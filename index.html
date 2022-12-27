@@ -1167,7 +1167,7 @@ setInterval(() => {
             blueHighlight--;
         }
     } else {
-        let color = hexToRgb("#00FF00");
+        let color = hexToRgb("#FF0000");
         redHighlight = color.r;
         greenHighlight = color.g;
         blueHighlight = color.b;
@@ -1182,7 +1182,7 @@ const weaponColors = {
     Bayonet: "#AAFFAA",
     Tomahawk: "#AAFFAA",
     Shark: "#31fa31",
-    Weatie: "#00FF00",
+    Weatie: "#FF0000",
     Revolver: "#570091",
     LAR: "#ffe15c",
     VITA: "#ff00ea",
@@ -1391,7 +1391,7 @@ function animate() {
 
             let color = hexToRgb("#0000ff");
             if (!localPlayerClass.team || localPlayerClass.team !== player["50"].team) {
-                color = hexToRgb("#00FF00");
+                color = hexToRgb("#ff0000");
                 if (weaponHighlighter) color = hexToRgb(weaponColors[playerStructs[player["50"].sessionId].wName]);
                 if (playerStructs[player["50"].sessionId].spawnProtected) color = hexToRgb('#ff2222');
             }
